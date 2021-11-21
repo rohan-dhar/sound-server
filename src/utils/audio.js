@@ -9,7 +9,7 @@ export const getText = async (file) => {
 
 	const config = {
 		encoding: "ENCODING_UNSPECIFIED",
-		sampleRateHertz: 48000,
+
 		audioChannelCount: 1,
 		languageCode: "en-US",
 		enableAutomaticPunctuation: true,
