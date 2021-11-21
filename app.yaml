@@ -2,6 +2,8 @@ runtime: nodejs16
 
 instance_class: F1
 
+entrypoint: "npm run"
+
 env_variables:
     GOOGLE_APPLICATION_CREDENTIALS: "./gcp-key.json"
     BAD_WORDS_API_KEY: "Ag1rxAksKomTRBFNjM8HHNmJiW9Z9kQ9"

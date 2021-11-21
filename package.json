@@ -9,7 +9,6 @@
 		"start": "nodemon index.js",
 		"run": "node index.js"
 	},
-	"entrypoint": "yarn run",
 	"dependencies": {
 		"@google-cloud/language": "^4.3.2",
 		"@google-cloud/speech": "^4.9.0",
