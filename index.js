@@ -1,0 +1,21 @@
+import { PORT } from "./conf.js";
+import express from "express";
+import bodyParser from "body-parser";
+import inferRouter from "./src/views/inferView.js";
+import fileUpload from "express-fileupload";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const app = express();
+
+app.listen(process.env.PORT, () =>
+	console.log(`🏃 Running on port ${process.env.PORT}`)
+);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(fileUpload());
+
+app.get("/", (req, res) => res.json({ status: "✅ Running..." }));
+app.use("/infer", inferRouter);
+
+export default app;
