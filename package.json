@@ -10,6 +10,7 @@
 		"start": "node index.js"
 	},
 	"dependencies": {
+		"@google-cloud/debug-agent": "^5.2.8",
 		"@google-cloud/language": "^4.3.2",
 		"@google-cloud/speech": "^4.9.0",
 		"@google-cloud/storage": "^5.16.0",
