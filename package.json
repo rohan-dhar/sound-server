@@ -6,8 +6,8 @@
 	"author": "Rohan Dhar <rohan19443@iiitd.ac.in>",
 	"license": "MIT",
 	"scripts": {
-		"start": "nodemon index.js",
-		"run": "node index.js"
+		"devStart": "nodemon index.js",
+		"start": "node index.js"
 	},
 	"dependencies": {
 		"@google-cloud/language": "^4.3.2",
