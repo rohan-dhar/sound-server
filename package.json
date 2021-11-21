@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "nodemon index.js",
-		"run": "node index.js"
+		"prodStart": "node index.js"
 	},
 	"dependencies": {
 		"@google-cloud/debug-agent": "^5.2.8",
