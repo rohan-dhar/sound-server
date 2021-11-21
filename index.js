@@ -9,8 +9,8 @@ dotenv.config();
 
 const app = express();
 
-app.listen(process.env.PORT, () =>
-	console.log(`🏃 Running on port ${process.env.PORT}`)
+app.listen(process.env.PORT || 4321, () =>
+	console.log(`🏃 Running on port ${process.env.PORT || 4321}`)
 );
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(fileUpload());
