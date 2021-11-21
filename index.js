@@ -3,11 +3,8 @@ import bodyParser from "body-parser";
 import inferRouter from "./src/views/inferView.js";
 import fileUpload from "express-fileupload";
 import dotenv from "dotenv";
-import debugAgent from "@google-cloud/debug-agent";
 
 dotenv.config();
-
-debugAgent.start({ serviceContext: { enableCanary: true } });
 
 const app = express();
 
