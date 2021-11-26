@@ -27,6 +27,7 @@ const analyse = async (text) => {
 		{
 			key: "cussWords",
 			run: async () => {
+				// return { words: [], totalUsed: 0 };
 				let response = await axios({
 					url: BAD_WORDS_API_URL,
 					method: "POST",
